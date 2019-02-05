@@ -3,7 +3,7 @@
 # Laravel & Quasar JWT Auth
 
 ### Backend
-    composer require mz2p/laravel-quasar-init
+    composer require aldozumaran/laravel-quasar-init
     
     php artisan vendor:publish --provider="Mz2p\LaravelQuasarInit\LaravelQuasarInitServiceProvider"
     
