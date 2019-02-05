@@ -1,0 +1,32 @@
+{
+    "name": "mz2p/laravel-quasar-init",
+    "description": "Laravel and Quasar JWT auth",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aldo Zumaran",
+            "email": "zumaran.aldo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-json": "*",
+        "tymon/jwt-auth": "^1.0.0-rc.3",
+        "willypuzzle/vuetify-php": "^2.0.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mz2p\\LaravelQuasarInit\\LaravelQuasarInitServiceProvider"
+            ],
+            "aliases": {
+                "LaravelQuasar": "Mz2p\\LaravelQuasarInit\\LaravelQuasarInitFacade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Mz2p\\LaravelQuasarInit\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,38 @@
+<?php
+
+namespace Mz2p\LaravelQuasarInit;
+
+use Illuminate\Support\ServiceProvider;
+
+class LaravelQuasarInitServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // Pubblica configurazione LaravelQuasar
+       /* $this->publishes([
+            __DIR__.'/config/quasar.php' => config_path('laravel_quasar.php'),
+        ]);*/
+        // Pubblica Framework Quasar
+        $this->publishes([
+            __DIR__.'/resources/views/quasar' => resource_path('modules'),
+        ]);
+
+    }
+
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->app->singleton('laravel_quasar', function($app) {
+            return new LaravelQuasarInit();
+        });
+    }
+}
