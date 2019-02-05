@@ -3,9 +3,11 @@
 # Laravel & Quasar JWT Auth
 
 ### Backend
-- composer require mz2p/laravel-quasar-init
-- php artisan vendor:publish --provider="Mz2p\LaravelQuasarInit\LaravelQuasarInitServiceProvider"
-- php artisan jwt:secret
+    composer require mz2p/laravel-quasar-init
+    
+    php artisan vendor:publish --provider="Mz2p\LaravelQuasarInit\LaravelQuasarInitServiceProvider"
+    
+    php artisan jwt:secret
 
 Edit app/Exceptions/Handler.php
  
@@ -35,6 +37,7 @@ Add in routes/api.php
     LaravelQuasar::routes();    
     
 Edit User model:
+    
     <?php
     
     namespace App;
@@ -45,8 +48,6 @@ Edit User model:
     {
     }
     
-Create database and migrations
-
 And run server
     
     php artisan serve
