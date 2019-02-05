@@ -8,7 +8,7 @@
             "email": "zumaran.aldo@gmail.com"
         }
     ],
-    "minimum-stability": "RC",
+    "minimum-stability": "dev",
     "prefer-stable" : true,
     "require": {
         "ext-json": "*",
