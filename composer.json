@@ -8,7 +8,6 @@
             "email": "zumaran.aldo@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "ext-json": "*",
         "tymon/jwt-auth": "^1.0.0-rc.3",
