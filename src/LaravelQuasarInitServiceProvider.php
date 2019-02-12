@@ -19,7 +19,7 @@ class LaravelQuasarInitServiceProvider extends ServiceProvider
         ]);*/
         // Pubblica Framework Quasar
         $this->publishes([
-            __DIR__.'/resources/views/quasar' => resource_path('modules'),
+            __DIR__.'/resources/views/quasar/admin1.0' => resource_path('modules/admin'),
         ]);
 
     }
