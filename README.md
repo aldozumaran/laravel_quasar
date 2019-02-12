@@ -3,6 +3,9 @@
 # Laravel & Quasar JWT Auth
 
 ### Backend
+* Quasar 0.17 - branch 1.0
+* Quasar 1.0 - branch master 
+
     composer require aldozumaran/laravel-quasar-init
     
     php artisan vendor:publish --provider="Mz2p\LaravelQuasarInit\LaravelQuasarInitServiceProvider"
